@@ -43,5 +43,9 @@ body{
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3 sec ease;
+}
 
+.btn:hover {
+    background-color: rgb(182, 180, 227);
 }
