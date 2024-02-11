@@ -16,7 +16,7 @@ git clone git@github.com:mizhenn/JavaScriptChallenges.git
 ```
 2. **Open the Project:**
 ```sh
-cd TODO
+cd TodoList
 
 ```
 3. **Launch the Application:**
