@@ -29,5 +29,39 @@ function createChart(type, height = 400){
     canvasContainer.style.height = `${height}px`;
 
     const ctx = document.getElementById('myChart').getContext('2d');
+    return new chartData(ctx, {
+        type: type,
+        data: chartData,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            onClick: (event, actieElements) =>{
+                if(actieElements.lenght > 0){
+                    const { datasetIndex, index } = actieElements[0];
+                    removedata(datasetIndex, index);
+                }
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
+            hover: {
+                mode: 'index',
+                intersect: false
+            }
+        }
+    });
+
+}
+
+let myChart = createChart('bar'); // Create initial chart with default height = 400
+
+function addData(){
+    const labelInput = document.getElementById('labelInput');
+    const dataInput = document.getElementById('dataInput');
+
     
 }
